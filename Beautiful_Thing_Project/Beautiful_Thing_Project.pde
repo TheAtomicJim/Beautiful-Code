@@ -74,7 +74,7 @@ void draw()
   rect(452,377,6,9);
   
   //Leaves Falling
-  fill(255,194,255);
+  fill(255,210,235);
   for (int i = 0; i < numLeaves; i ++)
   {
     ellipse(lx[i], ly[i], lSize[i], lSize[i]);
@@ -94,6 +94,14 @@ void draw()
   text("",360,495);
   
   //cursor
+  stroke(215,251,253);
+  noFill();
+  circle(mouseX,mouseY,20);
+}
+
+void mousePressed()
+{
+   //cursor
   stroke(215,251,253);
   noFill();
   circle(mouseX,mouseY,20);
